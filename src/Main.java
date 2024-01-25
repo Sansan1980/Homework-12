@@ -11,7 +11,8 @@ public class Main {
         book = new Book("Sto let odinochestva", "Garsia", 2022);
         System.out.print(book.getName() + " ");
         System.out.print(book.getAuthor() + " ");
-        System.out.print(book.getYearPublication() + " ");
+        System.out.println(book.getYearPublication() + " ");
+        System.out.println(book);
     }
 
 
