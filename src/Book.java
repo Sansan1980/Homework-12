@@ -27,14 +27,18 @@ public class Book {
     }
 
 
-    public void setYearPublication(int yearPublication) {
-        this.yearPublication = yearPublication;
+        public void setYearPublication(int yearPublication) {
+            this.yearPublication = yearPublication;
 
-    }
+        }
 
     @Override
     public String toString() {
-        return "BBook{" + "name='" + name + '\'' + ", author='" + author + '\'' + ", yearPublication=" + yearPublication + '}';
+        return "BBook{" +
+                "name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", yearPublication=" + yearPublication +
+                '}';
     }
 
     @Override
@@ -50,13 +54,14 @@ public class Book {
         return Objects.hash(name, author, yearPublication);
 
     }
-
 }
 
+    public String toString() {
+        return getName() + " " + getAuthor() + " " + getYearPublication();
+
+    }
 
 
-
-
-
+}
 
 
